@@ -69,6 +69,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDKTemplates\Templates\DEP - ClassesAuxiliares\UserControl\SqoUCListPaginatedVertical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SDKTemplates\Templates\DEP - ClassesAuxiliares\UserControl\SqoUCListPaginatedVertical.designer.cs">
+      <DependentUpon>SqoUCListPaginatedVertical.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqoReworkImageGrid.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -93,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SDKTemplates\Templates\DEP - ClassesAuxiliares\UserControl\SqoUCListPaginatedVertical.resx">
+      <DependentUpon>SqoUCListPaginatedVertical.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SqoReworkImageGrid.resx">
       <DependentUpon>SqoReworkImageGrid.cs</DependentUpon>
     </EmbeddedResource>
