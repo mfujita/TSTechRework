@@ -69,6 +69,7 @@
             this.btnPagePrevious.TabStop = false;
             this.btnPagePrevious.UseVisualStyleBackColor = false;
             this.btnPagePrevious.Click += new System.EventHandler(this.btnPagePrevious_Click);
+            this.btnPagePrevious.EnabledChanged += new System.EventHandler(btnPage_EnabledChanged);
             // 
             // btnPageNext
             // 
@@ -86,6 +87,7 @@
             this.btnPageNext.TabStop = false;
             this.btnPageNext.UseVisualStyleBackColor = false;
             this.btnPageNext.Click += new System.EventHandler(this.btnPageNext_Click);
+            this.btnPageNext.EnabledChanged += new System.EventHandler(btnPage_EnabledChanged);
             // 
             // SqoUCListPaginatedVertical
             // 

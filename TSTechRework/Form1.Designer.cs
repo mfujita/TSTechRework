@@ -31,8 +31,8 @@ namespace TSTechRework
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.sqoReworkImageGrid1 = new TSTechRework.SqoReworkImageGrid();
-            this.sqoUCListPaginatedVertical1 = new sqoTraceabilityStation.SqoUCListPaginatedVertical();
             this.sqoUCListPaginatedVertical2 = new sqoTraceabilityStation.SqoUCListPaginatedVertical();
+            this.sqoUCListPaginatedVertical1 = new sqoTraceabilityStation.SqoUCListPaginatedVertical();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,8 +44,8 @@ namespace TSTechRework
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.Controls.Add(this.sqoReworkImageGrid1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.sqoUCListPaginatedVertical1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.sqoUCListPaginatedVertical2, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.sqoUCListPaginatedVertical1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -67,14 +67,6 @@ namespace TSTechRework
             this.sqoReworkImageGrid1.Size = new System.Drawing.Size(327, 435);
             this.sqoReworkImageGrid1.TabIndex = 0;
             // 
-            // sqoUCListPaginatedVertical1
-            // 
-            this.sqoUCListPaginatedVertical1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sqoUCListPaginatedVertical1.Location = new System.Drawing.Point(4, 4);
-            this.sqoUCListPaginatedVertical1.Name = "sqoUCListPaginatedVertical1";
-            this.sqoUCListPaginatedVertical1.Size = new System.Drawing.Size(157, 429);
-            this.sqoUCListPaginatedVertical1.TabIndex = 1;
-            // 
             // sqoUCListPaginatedVertical2
             // 
             this.sqoUCListPaginatedVertical2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -82,6 +74,14 @@ namespace TSTechRework
             this.sqoUCListPaginatedVertical2.Name = "sqoUCListPaginatedVertical2";
             this.sqoUCListPaginatedVertical2.Size = new System.Drawing.Size(159, 429);
             this.sqoUCListPaginatedVertical2.TabIndex = 2;
+            // 
+            // sqoUCListPaginatedVertical1
+            // 
+            this.sqoUCListPaginatedVertical1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sqoUCListPaginatedVertical1.Location = new System.Drawing.Point(4, 4);
+            this.sqoUCListPaginatedVertical1.Name = "sqoUCListPaginatedVertical1";
+            this.sqoUCListPaginatedVertical1.Size = new System.Drawing.Size(157, 429);
+            this.sqoUCListPaginatedVertical1.TabIndex = 3;
             // 
             // Form1
             // 
@@ -102,8 +102,8 @@ namespace TSTechRework
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private SqoReworkImageGrid sqoReworkImageGrid1;
-        private sqoTraceabilityStation.SqoUCListPaginatedVertical sqoUCListPaginatedVertical1;
         private sqoTraceabilityStation.SqoUCListPaginatedVertical sqoUCListPaginatedVertical2;
+        private sqoTraceabilityStation.SqoUCListPaginatedVertical sqoUCListPaginatedVertical1;
     }
 }
 

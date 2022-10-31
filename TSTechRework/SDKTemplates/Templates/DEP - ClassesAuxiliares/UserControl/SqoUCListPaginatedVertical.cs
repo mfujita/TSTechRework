@@ -14,6 +14,19 @@ namespace sqoTraceabilityStation
         private int page;
         private int lastPage;
 
+        public int SizePage
+        {
+            get { return sizePage; }
+            set 
+            { 
+                sizePage = value;
+
+                CreateTableLayoutList();
+
+                this.Invalidate();
+            }
+        }
+
         public SqoUCListPaginatedVertical()
         {
             InitializeComponent();
@@ -32,6 +45,11 @@ namespace sqoTraceabilityStation
 
         private void CreateTableLayoutList()
         {
+            if(tableLayoutOrganizer.Controls.Contains(tableLayoutList))
+            {
+                tableLayoutOrganizer.Controls.Remove(tableLayoutList);
+            }
+
             tableLayoutList = new TableLayoutPanel();
 
             tableLayoutList.ColumnCount = 1;

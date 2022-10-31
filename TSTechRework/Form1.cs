@@ -22,11 +22,43 @@ namespace TSTechRework
             sqoReworkImageGrid1.GridBorderColor = Color.Blue;
             sqoReworkImageGrid1.SelectedSquareColor = Color.FromArgb(150, 255, 0, 0);
             sqoReworkImageGrid1.Click += SqoReworkImageGrid1_Click;
+
+            sqoUCListPaginatedVertical1.BackColor = Color.Transparent;
+            sqoUCListPaginatedVertical1.SizePage = 3;
+
+            CreationOfPictureboxList();
         }
 
         private void SqoReworkImageGrid1_Click(int row, int column)
         {
             sqoReworkImageGrid1.FillSquare(row, column, "2");
+        }
+
+        private void CreationOfPictureboxList()
+        {
+            List<UserControl> lista = new List<UserControl>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                PictureBox pic = new PictureBox();                
+                pic.BorderStyle = BorderStyle.FixedSingle;
+                pic.Visible = true;
+                pic.Dock = DockStyle.Fill;
+                pic.Margin = new Padding(0);
+                pic.Padding = new Padding(0);
+
+                UserControl uc = new UserControl();
+
+                uc.Visible = true;
+                uc.Dock = DockStyle.Fill;
+                uc.Margin = new Padding(0);
+                uc.Padding = new Padding(0);
+                uc.Controls.Add(pic);
+
+                lista.Add(uc);
+            }
+
+            sqoUCListPaginatedVertical1.SetList(lista);
         }
     }
 }
