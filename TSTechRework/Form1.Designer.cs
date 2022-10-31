@@ -29,23 +29,26 @@ namespace TSTechRework
         /// </summary>
         private void InitializeComponent()
         {
-            this.sqoReworkImageGrid2 = new TSTechRework.SqoReworkImageGrid();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.sqoReworkImageGrid1 = new TSTechRework.SqoReworkImageGrid();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // sqoReworkImageGrid2
+            // tableLayoutPanel1
             // 
-            this.sqoReworkImageGrid2.Backgroud = null;
-            this.sqoReworkImageGrid2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sqoReworkImageGrid2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sqoReworkImageGrid2.GridBorderColor = System.Drawing.Color.Red;
-            this.sqoReworkImageGrid2.Location = new System.Drawing.Point(9, 9);
-            this.sqoReworkImageGrid2.Margin = new System.Windows.Forms.Padding(0);
-            this.sqoReworkImageGrid2.Name = "sqoReworkImageGrid2";
-            this.sqoReworkImageGrid2.SelectedSquareColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.sqoReworkImageGrid2.Size = new System.Drawing.Size(641, 419);
-            this.sqoReworkImageGrid2.TabIndex = 1;
-            this.sqoReworkImageGrid2.Visible = false;
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.sqoReworkImageGrid1, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(659, 437);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // sqoReworkImageGrid1
             // 
@@ -53,11 +56,11 @@ namespace TSTechRework
             this.sqoReworkImageGrid1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.sqoReworkImageGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sqoReworkImageGrid1.GridBorderColor = System.Drawing.Color.Red;
-            this.sqoReworkImageGrid1.Location = new System.Drawing.Point(0, 0);
+            this.sqoReworkImageGrid1.Location = new System.Drawing.Point(165, 1);
             this.sqoReworkImageGrid1.Margin = new System.Windows.Forms.Padding(0);
             this.sqoReworkImageGrid1.Name = "sqoReworkImageGrid1";
             this.sqoReworkImageGrid1.SelectedSquareColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.sqoReworkImageGrid1.Size = new System.Drawing.Size(659, 437);
+            this.sqoReworkImageGrid1.Size = new System.Drawing.Size(327, 435);
             this.sqoReworkImageGrid1.TabIndex = 0;
             // 
             // Form1
@@ -66,17 +69,19 @@ namespace TSTechRework
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(659, 437);
-            this.Controls.Add(this.sqoReworkImageGrid2);
-            this.Controls.Add(this.sqoReworkImageGrid1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         #endregion
 
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private SqoReworkImageGrid sqoReworkImageGrid1;
-        private SqoReworkImageGrid sqoReworkImageGrid2;
     }
 }
 

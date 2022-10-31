@@ -29,6 +29,11 @@ namespace TSTechRework
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
 
+        public SqoReworkImageGrid()
+        {
+            InitializeComponent();
+        }
+
         public Color GridBorderColor
         {
             get
@@ -194,10 +199,7 @@ namespace TSTechRework
             }
         }
 
-        public SqoReworkImageGrid()
-        {
-            InitializeComponent();
-        }
+
 
         protected override CreateParams CreateParams
         {
@@ -321,5 +323,6 @@ namespace TSTechRework
 
             return (row >= 0 && column >= 0);
         }
+
     }
 }

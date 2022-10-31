@@ -43,25 +43,24 @@ namespace TSTechRework
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(17, 20);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(653, 381);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(711, 465);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -70,12 +69,12 @@ namespace TSTechRework
             this.tableLayoutPanel2.Controls.Add(this.sqoReworkImageGridSquare3, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.sqoReworkImageGridSquare4, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(103, 62);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(109, 72);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(445, 255);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(491, 319);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // sqoReworkImageGridSquare1
@@ -84,13 +83,13 @@ namespace TSTechRework
             this.sqoReworkImageGridSquare1.BorderColor = System.Drawing.Color.Red;
             this.sqoReworkImageGridSquare1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sqoReworkImageGridSquare1.Label = "";
-            this.sqoReworkImageGridSquare1.Location = new System.Drawing.Point(4, 4);
+            this.sqoReworkImageGridSquare1.Location = new System.Drawing.Point(3, 3);
             this.sqoReworkImageGridSquare1.Name = "sqoReworkImageGridSquare1";
-            this.sqoReworkImageGridSquare1.ShowBorderDown = false;
+            this.sqoReworkImageGridSquare1.ShowBorderDown = true;
             this.sqoReworkImageGridSquare1.ShowBorderLeft = true;
-            this.sqoReworkImageGridSquare1.ShowBorderRight = false;
+            this.sqoReworkImageGridSquare1.ShowBorderRight = true;
             this.sqoReworkImageGridSquare1.ShowBorderUp = true;
-            this.sqoReworkImageGridSquare1.Size = new System.Drawing.Size(215, 120);
+            this.sqoReworkImageGridSquare1.Size = new System.Drawing.Size(239, 153);
             this.sqoReworkImageGridSquare1.SizeBorder = 5;
             this.sqoReworkImageGridSquare1.TabIndex = 0;
             this.sqoReworkImageGridSquare1.Click += new System.EventHandler(this.SquareClick);
@@ -101,13 +100,13 @@ namespace TSTechRework
             this.sqoReworkImageGridSquare2.BorderColor = System.Drawing.Color.Red;
             this.sqoReworkImageGridSquare2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sqoReworkImageGridSquare2.Label = "";
-            this.sqoReworkImageGridSquare2.Location = new System.Drawing.Point(226, 4);
+            this.sqoReworkImageGridSquare2.Location = new System.Drawing.Point(248, 3);
             this.sqoReworkImageGridSquare2.Name = "sqoReworkImageGridSquare2";
-            this.sqoReworkImageGridSquare2.ShowBorderDown = false;
+            this.sqoReworkImageGridSquare2.ShowBorderDown = true;
             this.sqoReworkImageGridSquare2.ShowBorderLeft = true;
             this.sqoReworkImageGridSquare2.ShowBorderRight = true;
             this.sqoReworkImageGridSquare2.ShowBorderUp = true;
-            this.sqoReworkImageGridSquare2.Size = new System.Drawing.Size(215, 120);
+            this.sqoReworkImageGridSquare2.Size = new System.Drawing.Size(240, 153);
             this.sqoReworkImageGridSquare2.SizeBorder = 5;
             this.sqoReworkImageGridSquare2.TabIndex = 1;
             // 
@@ -117,13 +116,13 @@ namespace TSTechRework
             this.sqoReworkImageGridSquare3.BorderColor = System.Drawing.Color.Red;
             this.sqoReworkImageGridSquare3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sqoReworkImageGridSquare3.Label = "";
-            this.sqoReworkImageGridSquare3.Location = new System.Drawing.Point(4, 131);
+            this.sqoReworkImageGridSquare3.Location = new System.Drawing.Point(3, 162);
             this.sqoReworkImageGridSquare3.Name = "sqoReworkImageGridSquare3";
             this.sqoReworkImageGridSquare3.ShowBorderDown = true;
             this.sqoReworkImageGridSquare3.ShowBorderLeft = true;
-            this.sqoReworkImageGridSquare3.ShowBorderRight = false;
+            this.sqoReworkImageGridSquare3.ShowBorderRight = true;
             this.sqoReworkImageGridSquare3.ShowBorderUp = true;
-            this.sqoReworkImageGridSquare3.Size = new System.Drawing.Size(215, 120);
+            this.sqoReworkImageGridSquare3.Size = new System.Drawing.Size(239, 154);
             this.sqoReworkImageGridSquare3.SizeBorder = 5;
             this.sqoReworkImageGridSquare3.TabIndex = 2;
             // 
@@ -133,13 +132,13 @@ namespace TSTechRework
             this.sqoReworkImageGridSquare4.BorderColor = System.Drawing.Color.Red;
             this.sqoReworkImageGridSquare4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sqoReworkImageGridSquare4.Label = "";
-            this.sqoReworkImageGridSquare4.Location = new System.Drawing.Point(226, 131);
+            this.sqoReworkImageGridSquare4.Location = new System.Drawing.Point(248, 162);
             this.sqoReworkImageGridSquare4.Name = "sqoReworkImageGridSquare4";
             this.sqoReworkImageGridSquare4.ShowBorderDown = true;
             this.sqoReworkImageGridSquare4.ShowBorderLeft = true;
             this.sqoReworkImageGridSquare4.ShowBorderRight = true;
             this.sqoReworkImageGridSquare4.ShowBorderUp = true;
-            this.sqoReworkImageGridSquare4.Size = new System.Drawing.Size(215, 120);
+            this.sqoReworkImageGridSquare4.Size = new System.Drawing.Size(240, 154);
             this.sqoReworkImageGridSquare4.SizeBorder = 5;
             this.sqoReworkImageGridSquare4.TabIndex = 3;
             // 
@@ -151,7 +150,7 @@ namespace TSTechRework
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "SqoReworkImageGrid";
-            this.Size = new System.Drawing.Size(684, 418);
+            this.Size = new System.Drawing.Size(711, 465);
             this.SizeChanged += new System.EventHandler(this.SqoReworkImageGrid_SizeChanged);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
