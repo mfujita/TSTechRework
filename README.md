@@ -1,0 +1,1 @@
+Inclusão de um componente dentro de um componente gráfico
